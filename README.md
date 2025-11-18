@@ -79,13 +79,13 @@ Membangun tool prediksi untuk menentukan jumlah unit sepeda yang perlu disediaka
 - Decision Tree
 - Random Forest
 - Gradient Boosting
-- **XGBoost** ⭐ (Final Model)
+- **XGBoost** (Final Model)
 
 **Alasan Pemilihan XGBoost:**
 - Performa terbaik pada cross-validation
 - Mampu menangani non-linear relationships
 - Robust terhadap outliers
-- Feature importance yang jelas
+- Feature importance yang jelas dan interpretable
 
 ### 6. Model Evaluation
 **Metrics:**
@@ -166,36 +166,61 @@ Membangun tool prediksi untuk menentukan jumlah unit sepeda yang perlu disediaka
   - `matplotlib` & `seaborn` - Data visualization
   - `scikit-learn` - Machine learning
   - `xgboost` - Gradient boosting
+  - `python-pptx` - PowerPoint generation
+  - `PyPDF2` - PDF processing
 
 ## Project Structure
 
 ```
 .
-├── capstone_bike_sharing.ipynb    # Main notebook
-├── data_bike_sharing.csv          # Dataset
-├── Presentasi_Bike_Sharing_Capstone.pptx  # Presentation slides
-├── create_presentation.py         # Script to generate presentation
-└── README.md                      # Project documentation
+├── capstone_bike_sharing.ipynb                    # Main notebook dengan analisis lengkap
+├── data_bike_sharing.csv                          # Dataset Capital Bikeshare
+├── Presentasi_Bike_Sharing_Capstone.pptx          # Presentation slides (Bahasa Indonesia)
+├── Presentasi_Bike_Sharing_Capstone.md            # Presentation content (Markdown)
+├── create_presentation.py                         # Script untuk generate PowerPoint
+├── Capstone 3_ ML Presentation [Guidance].pdf     # Guidance presentasi
+└── README.md                                      # Project documentation
 ```
 
 ## How to Run
+
+### Prerequisites
+- Python 3.x
+- Jupyter Notebook atau Jupyter Lab
+
+### Installation & Setup
 
 1. **Clone repository atau download files**
 
 2. **Install dependencies:**
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+   pip install pandas numpy matplotlib seaborn scikit-learn xgboost jupyter
    ```
 
-3. **Run Jupyter Notebook:**
+3. **Install optional dependencies (untuk generate presentation):**
+   ```bash
+   pip install python-pptx PyPDF2
+   ```
+
+### Running the Project
+
+1. **Run Jupyter Notebook:**
    ```bash
    jupyter notebook capstone_bike_sharing.ipynb
    ```
+   
+2. **Jalankan semua cells** untuk melihat analisis lengkap dari:
+   - Business Problem Understanding
+   - Data Understanding & EDA
+   - Data Preprocessing
+   - Modeling & Evaluation
+   - Conclusion & Recommendations
 
-4. **Generate Presentation (optional):**
+3. **Generate PowerPoint Presentation (optional):**
    ```bash
    python create_presentation.py
    ```
+   File `Presentasi_Bike_Sharing_Capstone.pptx` akan dibuat secara otomatis
 
 ## Key Insights
 
@@ -215,12 +240,6 @@ Membangun tool prediksi untuk menentukan jumlah unit sepeda yang perlu disediaka
 ## Author
 
 **Capstone Project - Machine Learning Module 3**  
-Purwadhika Digital Technology School
-
-## License
-
-This project is created for educational purposes as part of Purwadhika Capstone Project.
+Michael Gary Ringgas
 
 ---
-
-**Last Updated:** November 2024
