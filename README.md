@@ -166,21 +166,6 @@ Membangun tool prediksi untuk menentukan jumlah unit sepeda yang perlu disediaka
   - `matplotlib` & `seaborn` - Data visualization
   - `scikit-learn` - Machine learning
   - `xgboost` - Gradient boosting
-  - `python-pptx` - PowerPoint generation
-  - `PyPDF2` - PDF processing
-
-## Project Structure
-
-```
-.
-├── capstone_bike_sharing.ipynb                    # Main notebook dengan analisis lengkap
-├── data_bike_sharing.csv                          # Dataset Capital Bikeshare
-├── Presentasi_Bike_Sharing_Capstone.pptx          # Presentation slides (Bahasa Indonesia)
-├── Presentasi_Bike_Sharing_Capstone.md            # Presentation content (Markdown)
-├── create_presentation.py                         # Script untuk generate PowerPoint
-├── Capstone 3_ ML Presentation [Guidance].pdf     # Guidance presentasi
-└── README.md                                      # Project documentation
-```
 
 ## How to Run
 
@@ -243,3 +228,4 @@ Membangun tool prediksi untuk menentukan jumlah unit sepeda yang perlu disediaka
 Michael Gary Ringgas
 
 ---
+
